@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7113F552282082C5003BF2A4 /* WordChainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7113F551282082C5003BF2A4 /* WordChainApp.swift */; };
-		7113F554282082C5003BF2A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7113F553282082C5003BF2A4 /* ContentView.swift */; };
+		7113F554282082C5003BF2A4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7113F553282082C5003BF2A4 /* HomeView.swift */; };
 		7113F556282082C6003BF2A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7113F555282082C6003BF2A4 /* Assets.xcassets */; };
 		7113F559282082C6003BF2A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7113F558282082C6003BF2A4 /* Preview Assets.xcassets */; };
 		7113F563282082C6003BF2A4 /* WordChainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7113F562282082C6003BF2A4 /* WordChainTests.swift */; };
 		7113F56D282082C6003BF2A4 /* WordChainUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7113F56C282082C6003BF2A4 /* WordChainUITests.swift */; };
 		7113F56F282082C6003BF2A4 /* WordChainUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7113F56E282082C6003BF2A4 /* WordChainUITestsLaunchTests.swift */; };
+		7138B1562820BEBC00A184D4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7138B1552820BEBC00A184D4 /* Game.swift */; };
+		7161324928209A3100655390 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7161324828209A3100655390 /* GameView.swift */; };
+		71A2DD9A2821E1E600A850D8 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 71A2DD992821E1E600A850D8 /* words.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		7113F54E282082C5003BF2A4 /* WordChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7113F551282082C5003BF2A4 /* WordChainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordChainApp.swift; sourceTree = "<group>"; };
-		7113F553282082C5003BF2A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7113F553282082C5003BF2A4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7113F555282082C6003BF2A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7113F558282082C6003BF2A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7113F55E282082C6003BF2A4 /* WordChainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordChainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		7113F568282082C6003BF2A4 /* WordChainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordChainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7113F56C282082C6003BF2A4 /* WordChainUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordChainUITests.swift; sourceTree = "<group>"; };
 		7113F56E282082C6003BF2A4 /* WordChainUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordChainUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7138B1552820BEBC00A184D4 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		7161324828209A3100655390 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		71A2DD992821E1E600A850D8 /* words.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +100,13 @@
 		7113F550282082C5003BF2A4 /* WordChain */ = {
 			isa = PBXGroup;
 			children = (
+				71A2DD982821E18000A850D8 /* Resources */,
+				7138B1542820BEA100A184D4 /* Utilities */,
 				7113F551282082C5003BF2A4 /* WordChainApp.swift */,
-				7113F553282082C5003BF2A4 /* ContentView.swift */,
+				7113F553282082C5003BF2A4 /* HomeView.swift */,
 				7113F555282082C6003BF2A4 /* Assets.xcassets */,
 				7113F557282082C6003BF2A4 /* Preview Content */,
+				7161324828209A3100655390 /* GameView.swift */,
 			);
 			path = WordChain;
 			sourceTree = "<group>";
@@ -125,6 +134,22 @@
 				7113F56E282082C6003BF2A4 /* WordChainUITestsLaunchTests.swift */,
 			);
 			path = WordChainUITests;
+			sourceTree = "<group>";
+		};
+		7138B1542820BEA100A184D4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7138B1552820BEBC00A184D4 /* Game.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		71A2DD982821E18000A850D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				71A2DD992821E1E600A850D8 /* words.txt */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7113F559282082C6003BF2A4 /* Preview Assets.xcassets in Resources */,
+				71A2DD9A2821E1E600A850D8 /* words.txt in Resources */,
 				7113F556282082C6003BF2A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7113F554282082C5003BF2A4 /* ContentView.swift in Sources */,
+				7113F554282082C5003BF2A4 /* HomeView.swift in Sources */,
 				7113F552282082C5003BF2A4 /* WordChainApp.swift in Sources */,
+				7138B1562820BEBC00A184D4 /* Game.swift in Sources */,
+				7161324928209A3100655390 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
